@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57778012-B8F6-4E9C-9584-294D7AF04F0C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AniMaIndex</RootNamespace>
+    <AssemblyName>AniMaIndex</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\AiredModel.cs" />
+    <Compile Include="Model\AnimeConstructModel.cs" />
+    <Compile Include="Model\AnimeListConstructModel.cs" />
+    <Compile Include="Model\AnimeListModel.cs" />
+    <Compile Include="Model\AnimeModel.cs" />
+    <Compile Include="Model\FavAnimeModel.cs" />
+    <Compile Include="Model\FavMangaModel.cs" />
+    <Compile Include="Model\FavStaffModel.cs" />
+    <Compile Include="Model\GenreModel.cs" />
+    <Compile Include="Model\LINQ\Anime.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Anime.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MangaConstructModel.cs" />
+    <Compile Include="Model\MangaListConstructModel.cs" />
+    <Compile Include="Model\MangaListModel.cs" />
+    <Compile Include="Model\MangaModel.cs" />
+    <Compile Include="Model\PublisherModel.cs" />
+    <Compile Include="Model\StaffConstructModel.cs" />
+    <Compile Include="Model\StaffModel.cs" />
+    <Compile Include="Model\StatusModel.cs" />
+    <Compile Include="Model\StudioModel.cs" />
+    <Compile Include="Model\TypeModel.cs" />
+    <Compile Include="Model\UserLogModel.cs" />
+    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="View\Admin\ControlAdAired.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdAired.Designer.cs">
+      <DependentUpon>ControlAdAired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdAnime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdAnime.Designer.cs">
+      <DependentUpon>ControlAdAnime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdGenre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdGenre.Designer.cs">
+      <DependentUpon>ControlAdGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdManga.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdManga.Designer.cs">
+      <DependentUpon>ControlAdManga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdminEditBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdminEditBase.Designer.cs">
+      <DependentUpon>ControlAdminEditBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdPublisher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdPublisher.Designer.cs">
+      <DependentUpon>ControlAdPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdStaff.Designer.cs">
+      <DependentUpon>ControlAdStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdStatus.Designer.cs">
+      <DependentUpon>ControlAdStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdStudio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdStudio.Designer.cs">
+      <DependentUpon>ControlAdStudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdType.Designer.cs">
+      <DependentUpon>ControlAdType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Admin\ControlAdUser.Designer.cs">
+      <DependentUpon>ControlAdUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ControlAbout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ControlAbout.Designer.cs">
+      <DependentUpon>ControlAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ControlBase.Designer.cs">
+      <DependentUpon>ControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ControlBase2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ControlBase2.Designer.cs">
+      <DependentUpon>ControlBase2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ControlBase3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ControlBase3.Designer.cs">
+      <DependentUpon>ControlBase3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ControlUserOpts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ControlUserOpts.Designer.cs">
+      <DependentUpon>ControlUserOpts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ControlUserOptsChoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ControlUserOptsChoice.Designer.cs">
+      <DependentUpon>ControlUserOptsChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\ControlUsrAniList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\User\ControlUsrAniList.Designer.cs">
+      <DependentUpon>ControlUsrAniList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\ControlUsrEditBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\User\ControlUsrEditBase.Designer.cs">
+      <DependentUpon>ControlUsrEditBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\ControlUsrFavAni.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\User\ControlUsrFavAni.Designer.cs">
+      <DependentUpon>ControlUsrFavAni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\ControlUsrFavManga.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\User\ControlUsrFavManga.Designer.cs">
+      <DependentUpon>ControlUsrFavManga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\ControlUsrFavStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\User\ControlUsrFavStaff.Designer.cs">
+      <DependentUpon>ControlUsrFavStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\ControlUsrMangaList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\User\ControlUsrMangaList.Designer.cs">
+      <DependentUpon>ControlUsrMangaList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ControlWelcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ControlWelcome.Designer.cs">
+      <DependentUpon>ControlWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\ControlAdminOpts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ControlAdminOpts.Designer.cs">
+      <DependentUpon>ControlAdminOpts.cs</DependentUpon>
+    </Compile>
+    <None Include="Model\LINQ\Anime.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Anime.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Model\LINQ\Anime.dbml.layout">
+      <DependentUpon>Anime.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="View\Admin\ControlAdAired.resx">
+      <DependentUpon>ControlAdAired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdAnime.resx">
+      <DependentUpon>ControlAdAnime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdGenre.resx">
+      <DependentUpon>ControlAdGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdManga.resx">
+      <DependentUpon>ControlAdManga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdminEditBase.resx">
+      <DependentUpon>ControlAdminEditBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdStatus.resx">
+      <DependentUpon>ControlAdStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdType.resx">
+      <DependentUpon>ControlAdType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ControlAbout.resx">
+      <DependentUpon>ControlAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ControlAdminOpts.resx">
+      <DependentUpon>ControlAdminOpts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdPublisher.resx">
+      <DependentUpon>ControlAdPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdStaff.resx">
+      <DependentUpon>ControlAdStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdStudio.resx">
+      <DependentUpon>ControlAdStudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ControlAdUser.resx">
+      <DependentUpon>ControlAdUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ControlBase.resx">
+      <DependentUpon>ControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ControlBase2.resx">
+      <DependentUpon>ControlBase2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ControlBase3.resx">
+      <DependentUpon>ControlBase3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ControlUserOpts.resx">
+      <DependentUpon>ControlUserOpts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ControlUserOptsChoice.resx">
+      <DependentUpon>ControlUserOptsChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\User\ControlUsrAniList.resx">
+      <DependentUpon>ControlUsrAniList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\User\ControlUsrEditBase.resx">
+      <DependentUpon>ControlUsrEditBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\User\ControlUsrMangaList.resx">
+      <DependentUpon>ControlUsrMangaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ControlWelcome.resx">
+      <DependentUpon>ControlWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AniMaIndex" Class="AnimeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=J:\Datab\Design\AniMaIndex\AniMaIndex.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" SettingsObjectName="AniMaIndex.Properties.Settings" SettingsPropertyName="AniMaIndexConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Anime" Member="Animes">
+    <Type Name="Anime">
+      <Column Name="TitleID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MangaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StudioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AniYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TitleName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SerialTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GenreID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShortDescription" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Episodes" Type="System.Decimal" DbType="Decimal(4,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AiredID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Anime_AnimeList" Member="AnimeLists" ThisKey="TitleID" OtherKey="TitleID" Type="AnimeList" />
+      <Association Name="Anime_FavAnime" Member="FavAnimes" ThisKey="TitleID" OtherKey="TitleID" Type="FavAnime" />
+      <Association Name="Anime_Staff" Member="Staffs" ThisKey="TitleID" OtherKey="TitleID" Type="Staff" />
+      <Association Name="AiredYet_Anime" Member="AiredYet" ThisKey="AiredID" OtherKey="AiredID" Type="AiredYet" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Genre_Anime" Member="Genre" ThisKey="GenreID" OtherKey="GenreID" Type="Genre" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Manga_Anime" Member="Manga" ThisKey="MangaID" OtherKey="MangaID" Type="Manga" IsForeignKey="true" />
+      <Association Name="SerialType_Anime" Member="SerialType" ThisKey="SerialTypeID" OtherKey="SerialTypeID" Type="SerialType" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Studio_Anime" Member="Studio" ThisKey="StudioID" OtherKey="StudioID" Type="Studio" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AiredYet" Member="AiredYets">
+    <Type Name="AiredYet">
+      <Column Name="AiredID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AiredName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="AiredYet_Anime" Member="Animes" ThisKey="AiredID" OtherKey="AiredID" Type="Anime" />
+      <Association Name="AiredYet_Manga" Member="Mangas" ThisKey="AiredID" OtherKey="AiredID" Type="Manga" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AnimeList" Member="AnimeLists">
+    <Type Name="AnimeList">
+      <Column Name="ListID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TitleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Score" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EpsWatched" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Anime_AnimeList" Member="Anime" ThisKey="TitleID" OtherKey="TitleID" Type="Anime" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="User_AnimeList" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="UserStatus_AnimeList" Member="UserStatus" ThisKey="StatusID" OtherKey="StatusID" Type="UserStatus" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FavAnime" Member="FavAnimes">
+    <Type Name="FavAnime">
+      <Column Name="FavAnimeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TitleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Anime_FavAnime" Member="Anime" ThisKey="TitleID" OtherKey="TitleID" Type="Anime" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="User_FavAnime" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FavManga" Member="FavMangas">
+    <Type Name="FavManga">
+      <Column Name="FavMangaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MangaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Manga_FavManga" Member="Manga" ThisKey="MangaID" OtherKey="MangaID" Type="Manga" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="User_FavManga" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FavStaff" Member="FavStaffs">
+    <Type Name="FavStaff">
+      <Column Name="FavStaffID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StaffID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Staff_FavStaff" Member="Staff" ThisKey="StaffID" OtherKey="StaffID" Type="Staff" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="User_FavStaff" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Genres" Member="Genres">
+    <Type Name="Genre">
+      <Column Name="GenreID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GenreName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Genre_Anime" Member="Animes" ThisKey="GenreID" OtherKey="GenreID" Type="Anime" />
+      <Association Name="Genre_Manga" Member="Mangas" ThisKey="GenreID" OtherKey="GenreID" Type="Manga" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Manga" Member="Mangas">
+    <Type Name="Manga">
+      <Column Name="MangaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PublisherID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MangaYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MangaName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ShortDescription" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Chapters" Type="System.Decimal" DbType="Decimal(4,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Thomes" Type="System.Decimal" DbType="Decimal(4,0) NOT NULL" CanBeNull="false" />
+      <Column Name="AiredID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GenreID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Manga_Anime" Member="Animes" ThisKey="MangaID" OtherKey="MangaID" Type="Anime" />
+      <Association Name="Manga_FavManga" Member="FavMangas" ThisKey="MangaID" OtherKey="MangaID" Type="FavManga" />
+      <Association Name="Manga_MangaList" Member="MangaLists" ThisKey="MangaID" OtherKey="MangaID" Type="MangaList" />
+      <Association Name="Manga_Staff" Member="Staffs" ThisKey="MangaID" OtherKey="MangaID" Type="Staff" />
+      <Association Name="AiredYet_Manga" Member="AiredYet" ThisKey="AiredID" OtherKey="AiredID" Type="AiredYet" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Genre_Manga" Member="Genre" ThisKey="GenreID" OtherKey="GenreID" Type="Genre" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Publisher_Manga" Member="Publisher" ThisKey="PublisherID" OtherKey="PublisherID" Type="Publisher" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MangaList" Member="MangaLists">
+    <Type Name="MangaList">
+      <Column Name="MangaListID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MangaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Score" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChaptersRead" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ThomesRead" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Manga_MangaList" Member="Manga" ThisKey="MangaID" OtherKey="MangaID" Type="Manga" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="User_MangaList" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="UserStatus_MangaList" Member="UserStatus" ThisKey="StatusID" OtherKey="StatusID" Type="UserStatus" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Publisher" Member="Publishers">
+    <Type Name="Publisher">
+      <Column Name="PublisherID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PublisherName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PublisherPage" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Publisher_Manga" Member="Mangas" ThisKey="PublisherID" OtherKey="PublisherID" Type="Manga" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SerialType" Member="SerialTypes">
+    <Type Name="SerialType">
+      <Column Name="SerialTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SerialName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="SerialType_Anime" Member="Animes" ThisKey="SerialTypeID" OtherKey="SerialTypeID" Type="Anime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Staff" Member="Staffs">
+    <Type Name="Staff">
+      <Column Name="StaffID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TitleID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MangaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StaffName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Occupation" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PersonalPage" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Staff_FavStaff" Member="FavStaffs" ThisKey="StaffID" OtherKey="StaffID" Type="FavStaff" />
+      <Association Name="Manga_Staff" Member="Manga" ThisKey="MangaID" OtherKey="MangaID" Type="Manga" IsForeignKey="true" />
+      <Association Name="Anime_Staff" Member="Anime" ThisKey="TitleID" OtherKey="TitleID" Type="Anime" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Studio" Member="Studios">
+    <Type Name="Studio">
+      <Column Name="StudioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudioName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StudioPage" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Studio_Anime" Member="Animes" ThisKey="StudioID" OtherKey="StudioID" Type="Anime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserLog" Member="UserLogs">
+    <Type Name="UserLog">
+      <Column Name="UserLogID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="User_UserLog" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NickName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Birthdate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Association Name="User_AnimeList" Member="AnimeLists" ThisKey="UserID" OtherKey="UserID" Type="AnimeList" />
+      <Association Name="User_FavAnime" Member="FavAnimes" ThisKey="UserID" OtherKey="UserID" Type="FavAnime" />
+      <Association Name="User_FavManga" Member="FavMangas" ThisKey="UserID" OtherKey="UserID" Type="FavManga" />
+      <Association Name="User_FavStaff" Member="FavStaffs" ThisKey="UserID" OtherKey="UserID" Type="FavStaff" />
+      <Association Name="User_MangaList" Member="MangaLists" ThisKey="UserID" OtherKey="UserID" Type="MangaList" />
+      <Association Name="User_UserLog" Member="UserLogs" ThisKey="UserID" OtherKey="UserID" Type="UserLog" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserStatus" Member="UserStatus">
+    <Type Name="UserStatus">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StatusName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="UserStatus_AnimeList" Member="AnimeLists" ThisKey="StatusID" OtherKey="StatusID" Type="AnimeList" />
+      <Association Name="UserStatus_MangaList" Member="MangaLists" ThisKey="StatusID" OtherKey="StatusID" Type="MangaList" />
+    </Type>
+  </Table>
+</Database>

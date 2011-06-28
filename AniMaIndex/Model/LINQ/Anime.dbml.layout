@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20.25, 17.375" name="Anime">
+  <DataContextMoniker Name="/AnimeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="40a56d5a-7826-414d-b16d-0c0b8e4aee6c" absoluteBounds="7.375, 4.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AnimeDataContext/Anime" />
+      <nestedChildShapes>
+        <elementListCompartment Id="84cfb810-03f3-4edc-bb33-14db1730c735" absoluteBounds="7.39, 4.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b982a20-5b18-42af-9c3d-611c0b51d359" absoluteBounds="3.75, 5.875, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/AnimeDataContext/AiredYet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="baab50f6-241b-4508-9e01-d9f8ab6d8770" absoluteBounds="3.765, 6.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7af8f287-1581-4339-826b-d14289796f97" absoluteBounds="12.25, 2, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/AnimeDataContext/AnimeList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5978d539-77c6-4ede-881a-c19c4b415271" absoluteBounds="12.265, 2.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6cd8d93-57c4-4acd-9ef8-01b196209ce2" absoluteBounds="12.25, 5.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/AnimeDataContext/FavAnime" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1573b4e3-edd5-4ab4-abe0-01271dcea352" absoluteBounds="12.265, 5.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4eedbd40-67a8-4c0c-8f17-4c9b3cc2c731" absoluteBounds="3.5, 0.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/AnimeDataContext/FavManga" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1dea90f-2a29-4a8b-8c8b-742e089f09d5" absoluteBounds="3.515, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5bf6114-6bf5-499f-a962-7be4244ab3d2" absoluteBounds="18, 4.25, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/AnimeDataContext/FavStaff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="118a3c48-7bb7-4720-83a6-119833075a49" absoluteBounds="18.015, 4.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="932650ea-0bc8-4460-bd8f-dcd5c0072576" absoluteBounds="3.5, 3.5, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/AnimeDataContext/Genre" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bdc55433-1306-43a7-b5d7-8fd77751242b" absoluteBounds="3.515, 3.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bff240ef-a3ea-4c71-bb62-b8aa14de2dc5" absoluteBounds="0.5, 2.625, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/AnimeDataContext/Manga" />
+      <nestedChildShapes>
+        <elementListCompartment Id="050a34f5-310b-4689-8320-dc779c57d044" absoluteBounds="0.515, 3.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0bc3c116-2436-4ebe-897e-f192ee1d64d0" absoluteBounds="6.5, 1, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AnimeDataContext/MangaList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d374eec5-7eb1-4300-9d1f-6b16b86885b8" absoluteBounds="6.515, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="551cd1d1-fc17-45d2-8f2d-888e93a274f4" absoluteBounds="1.5, 10.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/AnimeDataContext/Publisher" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40c1fe10-bfe3-48b9-9e98-43e317ad4cf3" absoluteBounds="1.5150000000000001, 11.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bd678356-f372-40c5-a9fc-f718048f8b15" absoluteBounds="3.75, 7.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/AnimeDataContext/SerialType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b538c907-a02d-448a-9f9f-133f4253d7c2" absoluteBounds="3.765, 8.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1602e374-6527-4b4b-a64e-ba4cfd0deb8b" absoluteBounds="15.25, 4, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/AnimeDataContext/Staff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7cd4bfd-4729-4679-96bc-f5e1db0f4e39" absoluteBounds="15.265, 4.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="701ee4ad-dac2-4a34-83a6-58838fdd6971" absoluteBounds="0.75, 5.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/AnimeDataContext/Studio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0fabb2de-3683-4e2e-bbee-d5707f1c95fd" absoluteBounds="0.765, 6.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e88588a-1613-4b63-965a-bf9a9dd2d9a1" absoluteBounds="3.5, 15.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/AnimeDataContext/UserLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1220c8a0-c790-4a28-93c4-6b00c6b42196" absoluteBounds="3.515, 16.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5baeb4e1-2971-46bd-a8d0-366b19b22642" absoluteBounds="0.75, 13.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AnimeDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5bf8a0d-61bc-4d9e-9981-c7372f4f1931" absoluteBounds="0.765, 14.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="396736d5-c349-46a5-9cbb-214b13ef270c" absoluteBounds="3.75, 13, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/AnimeDataContext/UserStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4680a1d5-2da9-4769-a127-870f23f4f385" absoluteBounds="3.765, 13.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 6.47199625651042); (6.58853916666667 : 6.47199625651042 : JumpStart); (6.75520583333333 : 6.47199625651042 : JumpEnd); (6.82291666666667 : 6.47199625651042 : JumpStart); (6.98958333333333 : 6.47199625651042 : JumpEnd); (7.375 : 6.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/AiredYet/AiredYet_Anime" />
+      <nodes>
+        <classShapeMoniker Id="3b982a20-5b18-42af-9c3d-611c0b51d359" />
+        <classShapeMoniker Id="40a56d5a-7826-414d-b16d-0c0b8e4aee6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.08593875 : 4.5); (9.08593875 : 3.59059895833333); (12.25 : 3.59059895833333)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Anime/Anime_AnimeList" />
+      <nodes>
+        <classShapeMoniker Id="40a56d5a-7826-414d-b16d-0c0b8e4aee6c" />
+        <classShapeMoniker Id="7af8f287-1581-4339-826b-d14289796f97" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.375 : 6.06814697265625); (11.6666666666667 : 6.06814697265625 : JumpStart); (11.9583333333333 : 6.06814697265625 : JumpEnd); (12.25 : 6.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Anime/Anime_FavAnime" />
+      <nodes>
+        <classShapeMoniker Id="40a56d5a-7826-414d-b16d-0c0b8e4aee6c" />
+        <classShapeMoniker Id="b6cd8d93-57c4-4acd-9ef8-01b196209ce2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.01404697916667); (5.57291666666667 : 4.01404697916667 : JumpStart); (5.73958333333333 : 4.01404697916667 : JumpEnd); (6.58853916666667 : 4.01404697916667 : JumpStart); (6.75520583333333 : 4.01404697916667 : JumpEnd); (6.82291666666667 : 4.01404697916667 : JumpStart); (6.98958333333333 : 4.01404697916667 : JumpEnd); (8.199216875 : 4.01404697916667); (8.199216875 : 4.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Genre/Genre_Anime" />
+      <nodes>
+        <classShapeMoniker Id="932650ea-0bc8-4460-bd8f-dcd5c0072576" />
+        <classShapeMoniker Id="40a56d5a-7826-414d-b16d-0c0b8e4aee6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 4.96079752604167); (2.66666666666667 : 4.96079752604167 : JumpStart); (2.83333333333333 : 4.96079752604167 : JumpEnd); (2.91666666666667 : 4.96079752604167 : JumpStart); (3.08333333333333 : 4.96079752604167 : JumpEnd); (5.57291666666667 : 4.96079752604167 : JumpStart); (5.73958333333333 : 4.96079752604167 : JumpEnd); (6.58853916666667 : 4.96079752604167 : JumpStart); (6.75520583333333 : 4.96079752604167 : JumpEnd); (6.82291666666667 : 4.96079752604167 : JumpStart); (6.98958333333333 : 4.96079752604167 : JumpEnd); (7.04166666666667 : 4.96079752604167 : JumpStart); (7.20833333333333 : 4.96079752604167 : JumpEnd); (7.375 : 4.96079752604167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Manga/Manga_Anime" />
+      <nodes>
+        <classShapeMoniker Id="bff240ef-a3ea-4c71-bb62-b8aa14de2dc5" />
+        <classShapeMoniker Id="40a56d5a-7826-414d-b16d-0c0b8e4aee6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 2.625); (1.5 : 1.44314697265625); (3.5 : 1.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Manga/Manga_FavManga" />
+      <nodes>
+        <classShapeMoniker Id="bff240ef-a3ea-4c71-bb62-b8aa14de2dc5" />
+        <classShapeMoniker Id="4eedbd40-67a8-4c0c-8f17-4c9b3cc2c731" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.65625 : 5.875); (5.65625 : 3.03125); (3.08333333333333 : 3.03125 : JumpStart); (2.91666666666667 : 3.03125 : JumpEnd); (2.83333333333333 : 3.03125 : JumpStart); (2.66666666666667 : 3.03125 : JumpEnd); (2.5 : 3.03125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/AiredYet/AiredYet_Manga" />
+      <nodes>
+        <classShapeMoniker Id="3b982a20-5b18-42af-9c3d-611c0b51d359" />
+        <classShapeMoniker Id="bff240ef-a3ea-4c71-bb62-b8aa14de2dc5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 4.09699625651042); (3.08333333333333 : 4.09699625651042 : JumpStart); (2.91666666666667 : 4.09699625651042 : JumpEnd); (2.83333333333333 : 4.09699625651042 : JumpStart); (2.66666666666667 : 4.09699625651042 : JumpEnd); (2.5 : 4.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Genre/Genre_Manga" />
+      <nodes>
+        <classShapeMoniker Id="932650ea-0bc8-4460-bd8f-dcd5c0072576" />
+        <classShapeMoniker Id="bff240ef-a3ea-4c71-bb62-b8aa14de2dc5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 2.765625); (2.66666666666667 : 2.765625 : JumpStart); (2.83333333333333 : 2.765625 : JumpEnd); (2.91666666666667 : 2.765625 : JumpStart); (3.08333333333333 : 2.765625 : JumpEnd); (6.5 : 2.765625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Manga/Manga_MangaList" />
+      <nodes>
+        <classShapeMoniker Id="bff240ef-a3ea-4c71-bb62-b8aa14de2dc5" />
+        <classShapeMoniker Id="0bc3c116-2436-4ebe-897e-f192ee1d64d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 11.3181469726562); (0.59375 : 11.3181469726562); (0.59375 : 5.1651025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Publisher/Publisher_Manga" />
+      <nodes>
+        <classShapeMoniker Id="551cd1d1-fc17-45d2-8f2d-888e93a274f4" />
+        <classShapeMoniker Id="bff240ef-a3ea-4c71-bb62-b8aa14de2dc5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 8.47199625651042); (6.58853916666667 : 8.47199625651042 : JumpStart); (6.75520583333333 : 8.47199625651042 : JumpEnd); (6.82291666666667 : 8.47199625651042 : JumpStart); (6.98958333333333 : 8.47199625651042 : JumpEnd); (8.375 : 8.47199625651042); (8.375 : 7.23240397135417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/SerialType/SerialType_Anime" />
+      <nodes>
+        <classShapeMoniker Id="bd678356-f372-40c5-a9fc-f718048f8b15" />
+        <classShapeMoniker Id="40a56d5a-7826-414d-b16d-0c0b8e4aee6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.25 : 4.94314697265625); (18 : 4.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AnimeDataContext/Staff/Staff_FavStaff" />
+      <nodes>
+        <classShapeMoniker Id="1602e374-6527-4b4b-a64e-ba4cfd0deb8b" />
+        <classShapeMoniker Id="b5bf6114-6bf5-499f-a962-7be4244ab3d2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.031252 : 2.625); (2.031252 : 2.375); (2.75 : 2.375); (2.75 : 5.23159912109375); (2.91666666666667 : 5.23159912109375 : JumpStart); (3.08333333333333 : 5.23159912109375 : JumpEnd); (5.57291666666667 : 5.23159912109375 : JumpStart); (5.73958333333333 : 5.23159912109375 : JumpEnd); (6.58853916666667 : 5.23159912109375 : JumpStart); (6.75520583333333 : 5.23159912109375 : JumpEnd); (6.82291666666667 : 5.23159912109375 : JumpStart); (6.98958333333333 : 5.23159912109375 : JumpEnd); (7.125 : 5.23159912109375); (7.125 : 4.25); (8.11588354166667 : 4.25 : JumpStart); (8.28255020833334 : 4.25 : JumpEnd); (9.00260541666667 : 4.25 : JumpStart); (9.16927208333333 : 4.25 : JumpEnd); (11.8813740613482 : 4.25 : JumpStart); (12.0480407280148 : 4.25 : JumpEnd); (13.1666666666667 : 4.25 : JumpStart); (13.3333333333333 : 4.25 : JumpEnd); (14.875 : 4.25); (14.875 : 5.46597612109375); (15.25 : 5.46597612109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Manga/Manga_Staff" />
+      <nodes>
+        <classShapeMoniker Id="bff240ef-a3ea-4c71-bb62-b8aa14de2dc5" />
+        <classShapeMoniker Id="1602e374-6527-4b4b-a64e-ba4cfd0deb8b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.375 : 4.90625); (11.6666666666667 : 4.90625 : JumpStart); (11.9583333333333 : 4.90625 : JumpEnd); (14.7916666666667 : 4.90625 : JumpStart); (14.9583333333333 : 4.90625 : JumpEnd); (15.25 : 4.90625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Anime/Anime_Staff" />
+      <nodes>
+        <classShapeMoniker Id="40a56d5a-7826-414d-b16d-0c0b8e4aee6c" />
+        <classShapeMoniker Id="1602e374-6527-4b4b-a64e-ba4cfd0deb8b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.78125); (2.91666666666667 : 5.78125 : JumpStart); (3.08333333333333 : 5.78125 : JumpEnd); (5.57291666666667 : 5.78125 : JumpStart); (5.73958333333333 : 5.78125 : JumpEnd); (6.58853916666667 : 5.78125 : JumpStart); (6.75520583333333 : 5.78125 : JumpEnd); (6.82291666666667 : 5.78125 : JumpStart); (6.98958333333333 : 5.78125 : JumpEnd); (7.375 : 5.78125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/Studio/Studio_Anime" />
+      <nodes>
+        <classShapeMoniker Id="701ee4ad-dac2-4a34-83a6-58838fdd6971" />
+        <classShapeMoniker Id="40a56d5a-7826-414d-b16d-0c0b8e4aee6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 14.797050686849); (11.75 : 14.797050686849); (11.75 : 4.4631982421875); (11.7916666666667 : 4.4631982421875 : JumpStart); (11.9583333333333 : 4.4631982421875 : JumpEnd); (13.25 : 4.4631982421875); (13.25 : 3.9631982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AnimeDataContext/User/User_AnimeList" />
+      <nodes>
+        <classShapeMoniker Id="5baeb4e1-2971-46bd-a8d0-366b19b22642" />
+        <classShapeMoniker Id="7af8f287-1581-4339-826b-d14289796f97" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 14.9980719114583); (13.25 : 14.9980719114583); (13.25 : 6.7612939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AnimeDataContext/User/User_FavAnime" />
+      <nodes>
+        <classShapeMoniker Id="5baeb4e1-2971-46bd-a8d0-366b19b22642" />
+        <classShapeMoniker Id="b6cd8d93-57c4-4acd-9ef8-01b196209ce2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 13.625); (1.75 : 12.2612939453125); (3.75 : 12.2612939453125); (3.75 : 9.31899251302083); (3 : 9.31899251302083); (3 : 1.82097245898438); (3.5 : 1.82097245898438)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/User/User_FavManga" />
+      <nodes>
+        <classShapeMoniker Id="5baeb4e1-2971-46bd-a8d0-366b19b22642" />
+        <classShapeMoniker Id="4eedbd40-67a8-4c0c-8f17-4c9b3cc2c731" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 14.3280014960938); (6.82291666666667 : 14.3280014960938 : JumpStart); (6.98958333333333 : 14.3280014960938 : JumpEnd); (11.6666666666667 : 14.3280014960938 : JumpStart); (11.8333333333333 : 14.3280014960938 : JumpEnd); (13.1666666666667 : 14.3280014960938 : JumpStart); (13.3333333333333 : 14.3280014960938 : JumpEnd); (19 : 14.3280014960938); (19 : 5.6362939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AnimeDataContext/User/User_FavStaff" />
+      <nodes>
+        <classShapeMoniker Id="5baeb4e1-2971-46bd-a8d0-366b19b22642" />
+        <classShapeMoniker Id="b5bf6114-6bf5-499f-a962-7be4244ab3d2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 14.5625260914714); (6.90625 : 14.5625260914714); (6.90625 : 3.15549967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/User/User_MangaList" />
+      <nodes>
+        <classShapeMoniker Id="5baeb4e1-2971-46bd-a8d0-366b19b22642" />
+        <classShapeMoniker Id="0bc3c116-2436-4ebe-897e-f192ee1d64d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 15.1320861445313); (3.5625 : 15.1320861445313); (3.5625 : 15.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AnimeDataContext/User/User_UserLog" />
+      <nodes>
+        <classShapeMoniker Id="5baeb4e1-2971-46bd-a8d0-366b19b22642" />
+        <classShapeMoniker Id="4e88588a-1613-4b63-965a-bf9a9dd2d9a1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 13); (6.125 : 12.625); (6.58853916666667 : 12.625 : JumpStart); (6.75520583333333 : 12.625 : JumpEnd); (6.82291666666667 : 12.625 : JumpStart); (6.98958333333333 : 12.625 : JumpEnd); (11.6666666666667 : 12.625 : JumpStart); (11.8333333333333 : 12.625 : JumpEnd); (11.875 : 12.625); (11.875 : 4.33970739468149); (12.251509152494 : 3.9631982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AnimeDataContext/UserStatus/UserStatus_AnimeList" />
+      <nodes>
+        <classShapeMoniker Id="396736d5-c349-46a5-9cbb-214b13ef270c" />
+        <classShapeMoniker Id="7af8f287-1581-4339-826b-d14289796f97" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 13.6282487565104); (6.6718725 : 13.6282487565104); (6.6718725 : 3.15549967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnimeDataContext/UserStatus/UserStatus_MangaList" />
+      <nodes>
+        <classShapeMoniker Id="396736d5-c349-46a5-9cbb-214b13ef270c" />
+        <classShapeMoniker Id="0bc3c116-2436-4ebe-897e-f192ee1d64d0" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
